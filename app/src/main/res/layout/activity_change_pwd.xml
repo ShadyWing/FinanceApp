@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ChangePwdActivity">
+
+    <RelativeLayout
+        android:id="@+id/setting_changepwd_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/setting_changepwd_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_arrow_left_s_line" />
+
+        <TextView
+            android:id="@+id/setting_changepwd_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改密码"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="36dp">
+
+        <EditText
+
+            android:id="@+id/setting_changepwd_et_oldpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/shape_gray_edit"
+            android:hint="原密码"
+            android:inputType="numberPassword"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/setting_changepwd_et_newpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_changepwd_et_oldpwd"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/shape_gray_edit"
+            android:hint="新密码"
+            android:inputType="numberPassword"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_changepwd_et_newpwd"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/setting_changepwd_btn_changepwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/shape_active_btn"
+                android:text="修改"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/setting_changepwd_btn_setdefaultpwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_changepwd_btn_changepwd"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/shape_gray_edit"
+                android:text="重置为默认"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

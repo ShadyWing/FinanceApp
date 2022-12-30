@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f3f3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorThemeYellow"
+        android:paddingHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/search_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClick"
+            android:src="@mipmap/ic_arrow_left_s_line" />
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/search_iv_back"
+            android:background="@drawable/shape_main_element"
+            android:hint="请输入搜索信息"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16sp">
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/search_iv_sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:onClick="onClick"
+            android:src="@mipmap/ic_search_line" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/search_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#f3f3f3" />
+    <TextView
+        android:id="@+id/search_tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数据为空"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:drawableTop="@mipmap/ic_file_unknow_line"
+        android:layout_marginTop="250dp"/>
+
+</LinearLayout>

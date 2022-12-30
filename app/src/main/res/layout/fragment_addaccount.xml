@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <GridView
+        android:id="@+id/frag_addaccount_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/frag_addaccount_rl_money"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="-10dp"
+        android:background="#FDFDFD"
+        android:numColumns="4"
+        android:paddingHorizontal="20dp"
+        android:scrollbars="none" />
+
+
+    <RelativeLayout
+        android:id="@+id/frag_addaccount_rl_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fragment_addaccount_rl_note"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:background="@android:drawable/dialog_holo_light_frame">
+
+        <EditText
+            android:id="@+id/dialog_note_tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#FFFFFF"
+            android:hint="0"
+            android:inputType="number"
+            android:padding="10dp"
+            android:selectAllOnFocus="false"
+            android:textAlignment="viewEnd"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_addaccount_rl_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/divider11"
+        android:layout_alignParentBottom="false"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/frag_addaccount_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="2022/12/28"
+            android:textColor="#1F1F1F" />
+
+        <TextView
+            android:id="@+id/frag_addaccount_tv_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@id/frag_addaccount_tv_time"
+            android:background="#EBEBEB"
+            android:hint="添加备注"
+            android:padding="10dp"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/frag_addaccount_keyboard"
+        android:background="?android:attr/listDivider" />
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/frag_addaccount_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/keyboard_button"
+        android:keyTextColor="#000000"
+        android:shadowColor="#ffffff"
+        android:shadowRadius="0.0" />
+
+</RelativeLayout>

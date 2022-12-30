@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_dayrecord_lv_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_dayrecord_lv_daylayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:id="@+id/item_dayrecord_lv_header_rl_oneday"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp">
+
+            <TextView
+                android:id="@+id/item_dayrecord_lv_header_tv_inout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="收入：0    支出：0"
+                android:textAllCaps="true"
+                android:textColor="#515151"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_dayrecord_lv_header_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="12月28日"
+                android:textAllCaps="true"
+                android:textColor="#515151"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/item_dayrecord_lv_header_rl_oneday"
+            android:background="#EEEEEE" />
+
+        <ListView
+            android:id="@+id/item_dayrecord_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divider4"
+            android:divider="@null"
+            android:scrollbars="none">
+
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>

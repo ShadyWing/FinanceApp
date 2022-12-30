@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorThemeYellow"
+        android:paddingHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/main_iv_logo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@mipmap/ic_app" />
+
+        <ImageView
+            android:id="@+id/main_tv_appname"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="false"
+            app:srcCompat="@mipmap/app_logo" />
+
+        <ImageView
+            android:id="@+id/main_btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/ic_search_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_lv_daylayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_rl_header"
+        android:layout_marginTop="-20dp"
+        android:background="#FFFFFF">
+
+        <ListView
+            android:id="@+id/main_days_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_rl_top"
+        android:background="#00FFFFFF">
+
+        <RelativeLayout
+            android:id="@+id/main_shadow_header"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/main_rl2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginBottom="-4dp"
+            android:alpha="0.3"
+            android:background="@android:drawable/dialog_holo_light_frame">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_main_gradient">
+
+            <RelativeLayout
+                android:id="@+id/main_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/shape_main_element"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/main_ll_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/divider6"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="#C9C9C9" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        app:srcCompat="@mipmap/ic_arrow_right_s_line" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/main_tv_top_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2022 年"
+                    android:textColor="#6D6D6D"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/main_tv_top_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_tv_top_year"
+                    android:layout_alignStart="@+id/main_tv_top_year"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="5dp"
+                    android:text="12"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/main_tv_top_month"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toEndOf="@+id/main_tv_top_month"
+                    android:text="月"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/main_tv_top_year"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/main_tv_top_year"
+                    android:text="支出"
+                    android:textColor="#6D6D6D"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@id/main_ll_more"
+                    android:text="收入"
+                    android:textColor="#6D6D6D"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/main_tv_top_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView"
+                    android:layout_alignBottom="@+id/main_tv_top_month"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="0.0"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/main_tv_top_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView2"
+                    android:layout_alignBottom="@+id/main_tv_top_month"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="0.0"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/main_btn_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/add_item_button"
+        android:src="@mipmap/ic_add_line" />
+
+
+</RelativeLayout>
