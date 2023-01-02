@@ -1,5 +1,5 @@
 # Description
- This is a app for my PBL of Android Programming Course.
+ This is an app for my PBL of Android Programming Course.
  
  ## Notice
  This app is based on the version of the link below:
@@ -9,13 +9,13 @@
  
  The default username is 123, password is 456.
  
- This is a Android App for use:
+ This is an Android App for use:
  - Basic function of bookkeeping/accounting.
  - Add note for your account.
  - Check history of your account.
  - Search for account by the note added.
  
- - As for this is a for-homework app, I am not and didn't add network system, so the username and password works just offline.
+ - As for this is a for-homework app, I am not able to and didn't add network system, so the username and password works just offline.
  
 ## Android Virtual Device:
  - Type: Pixel 2 API 26
