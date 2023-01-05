@@ -1,4 +1,4 @@
-This is an app for my PBL of Android Programming Course. This app is based on the version of [简约记账@Gitee.com](https://gitee.com/happyanimee/simple-bookkeeping). I made several mini changes in the features and some changes in the UI. As for this is a for-homework app, I am not able to and didn't add network system, so the username and password works just offline.
+This is an app for my PBL of Android Programming Course. This app is based on the version of [简约记账@Gitee.com](https://gitee.com/happyanimee/simple-bookkeeping). I made several mini changes in the features and some changes in the UI. As for this is a for-homework app, I didn't learn how to add network module, so the username and password work just offline.
 
  ## Features
 
